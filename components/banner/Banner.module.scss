@@ -4,31 +4,19 @@
 
 
 
-.banner_abso {
-    position: relative;
-
-    .theorange {
-        position: absolute;
-        width: 100%;
-        // object-fit: cover;
-        // top: 250%;
-    }
-
-    .plane {
-       
-    }
-}
 
 
 
 .banner {
     height: 100%;
     position: relative;
+    padding-top: toRem(72);
 
     .banner_bg {
         position: absolute;
         top: -0.85rem;
         z-index: 0;
+        padding-top: 17px;
 
         img {
             width: 100%;
@@ -42,7 +30,7 @@
     .banner_popup {
         position: absolute;
         /* margin-top: 6.85rem; */
-        top: 19.95rem;
+        top: 21.95rem;
         left: 50%;
         transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
@@ -72,6 +60,74 @@
 
         .popup_content {
             background-image: linear-gradient(to bottom, rgba(135, 1, 202, 1), rgba(135, 1, 202, 0));
+            position: relative;
+
+
+            .banner_left {
+                position: absolute;
+                display: flex;
+                background-color: #8701CA;
+                padding: toRem(24) toRem(54) toRem(24) toRem(0);
+                left: -20%;
+                top: 28%;
+                max-width: 346px;
+                border-radius: 20px;
+
+                .banner_left_icon {}
+
+                .banner_left_content {
+                    display: flex;
+                    flex-direction: column;
+                    min-width: 137px;
+                    text-align: start;
+
+                    p {
+                        font-size: 32px;
+                        color: #ffffff;
+                        margin: 0;
+                    }
+
+                    span {
+                        font-size: 14px;
+                        color: #ffffff;
+
+                    }
+                }
+
+            }
+
+            .banner_right {
+                position: absolute;
+                display: flex;
+                background-color: #FCA345;
+                padding: toRem(24) toRem(54) toRem(24) toRem(0);
+                right: -20%;
+                top: 28%;
+                max-width: 346px;
+                border-radius: 20px;
+
+                .banner_right_icon {}
+
+                .banner_right_content {
+                    display: flex;
+                    flex-direction: column;
+                    min-width: 137px;
+                    text-align: start;
+
+                    p {
+                        font-size: 32px;
+                        color: #ffffff;
+                        margin: 0;
+                    }
+
+                    span {
+                        font-size: 14px;
+                        color: #ffffff;
+
+                    }
+                }
+
+            }
 
             .popup_title {
                 padding-top: toRem(85);
@@ -79,6 +135,7 @@
                 max-width: toRem(792);
                 @include Inter800();
                 font-size: toRem(48);
+                margin: auto;
 
                 span {
                     color: #ffffff;
@@ -87,6 +144,10 @@
 
             p {
                 color: #D2BADE;
+                padding-top: toRem(10);
+                max-width: 610px;
+                margin: auto;
+
             }
 
             .popup_search {
@@ -98,11 +159,12 @@
                     position: relative;
                     border: 1px solid #ffffff;
                     border-radius: toRem(100);
-                    margin: 0 10%;
+                    margin: auto;
                     display: flex;
                     justify-content: space-between;
                     padding: 1rem 0.5rem 1rem 1rem;
                     background-color: #ffffff;
+                    max-width: toRem(500);
 
                     input {
                         border: none;
@@ -111,14 +173,119 @@
 
                     img {
                         position: absolute;
-                        top: toRem(20);
+                        top: toRem(16);
                         right: 2%;
                     }
                 }
+
+
 
             }
         }
 
 
     }
+
+    .theorange {
+        position: absolute;
+        top: 820%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .plane {
+        position: absolute;
+        top: 735%;
+        right: 44%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .purple {
+        position: absolute;
+        top: 826%;
+        right: 44.5%;
+
+        img {
+            width: 180%;
+        }
+    }
+
+    .stroke {
+        position: absolute;
+        top: 840%;
+        right: 44%;
+
+        img {
+            width: 178%;
+        }
+    }
+
+    .banner_course {
+        position: absolute;
+        top: 1190%;
+        -webkit-transform: translate(-50%, -50%);
+        text-align: center;
+        width: 58%;
+        left: 50%;
+        background-color: #8701CA;
+        min-width: 1170px;
+        display: flex;
+        justify-content: end;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 38px 92px 37px 8px;
+        border-radius: 16px;
+
+        .banner_course_content {
+            .banner_course_title {
+                color: #ffffff;
+                text-align: start;
+                max-width: 406px;
+                margin-bottom: 16px;
+                
+                p {
+                    font-size: 32px;
+                    @include Inter600();
+                    line-height: 48px;
+                }
+            }
+
+            .banner_course_lesson {
+
+                gap: 4px;
+                display: flex;
+
+                a {
+                    padding: 11px 36px;
+                    border-radius: 8px;
+
+                    &:nth-child(1) {
+                        background-color: #FCA345;
+                    }
+
+                    &:nth-child(2) {
+                        background-color: #7EC4CC;
+                    }
+
+                    &:nth-child(3) {
+                        background-color: #F37F7F;
+                    }
+
+                    &:nth-child(4) {
+                        background-color: #7B90FF;
+                    }
+
+                }
+
+            }
+        }
+
+    }
+
+
 }
