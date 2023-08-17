@@ -1,0 +1,124 @@
+@import "@/styles/variables";
+@import "@/styles/breakpoint";
+@import "@/styles/font";
+
+
+
+.banner_abso {
+    position: relative;
+
+    .theorange {
+        position: absolute;
+        width: 100%;
+        // object-fit: cover;
+        // top: 250%;
+    }
+
+    .plane {
+       
+    }
+}
+
+
+
+.banner {
+    height: 100%;
+    position: relative;
+
+    .banner_bg {
+        position: absolute;
+        top: -0.85rem;
+        z-index: 0;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.2s;
+
+        }
+    }
+
+    .banner_popup {
+        position: absolute;
+        /* margin-top: 6.85rem; */
+        top: 19.95rem;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        text-align: center;
+        width: 58%;
+        // height: 100%;
+
+
+
+        .popup_icon {
+            display: flex;
+            padding: toRem(13) 0 toRem(13) toRem(24);
+            gap: toRem(8);
+            background: #6E05A2;
+            border-radius: toRem(16) toRem(16) 0 0;
+
+
+            .popup_icon_round {
+                width: toRem(14);
+                height: toRem(14);
+                border-radius: 50%;
+                background-color: white;
+                /* Màu trắng */
+            }
+        }
+
+        .popup_content {
+            background-image: linear-gradient(to bottom, rgba(135, 1, 202, 1), rgba(135, 1, 202, 0));
+
+            .popup_title {
+                padding-top: toRem(85);
+                color: #FCA345;
+                max-width: toRem(792);
+                @include Inter800();
+                font-size: toRem(48);
+
+                span {
+                    color: #ffffff;
+                }
+            }
+
+            p {
+                color: #D2BADE;
+            }
+
+            .popup_search {
+                padding-top: toRem(32);
+                position: relative;
+                padding-bottom: 228px;
+
+                .popup_search_cooper {
+                    position: relative;
+                    border: 1px solid #ffffff;
+                    border-radius: toRem(100);
+                    margin: 0 10%;
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 1rem 0.5rem 1rem 1rem;
+                    background-color: #ffffff;
+
+                    input {
+                        border: none;
+                        min-width: 400px;
+                    }
+
+                    img {
+                        position: absolute;
+                        top: toRem(20);
+                        right: 2%;
+                    }
+                }
+
+            }
+        }
+
+
+    }
+}

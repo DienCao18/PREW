@@ -1,0 +1,51 @@
+@import "@/styles/variables";
+@import "@/styles/breakpoint";
+@import "@/styles/font";
+
+.header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    .header_inner {
+        display: flex;
+        justify-content: flex-end;
+        margin: 0 15%;
+        .header_logo {
+            position: absolute;
+            left: 17%;
+            padding: toRem(12) 0;
+        }
+
+        .header_submenu {
+            display: flex;
+            margin: toRem(30) toRem(0) toRem(8) 0;
+            ul {
+                display: flex;
+                font-size: toRem(16);
+                gap: toRem(24);
+                li {
+                    justify-content: space-between;
+                }
+            }
+        }
+
+        .header_login {
+           margin-left: toRem(71.5) ;
+           a {
+            padding: toRem(10) toRem(28);
+            color: #ffffff;
+            font-size: toRem(16);
+                &:first-of-type {
+                    background-image: linear-gradient(to right, #F95B34, #F9B840);
+                    background-color: #F95B34;
+                    border-radius: 0 toRem(0) toRem(0) toRem(16);
+                }
+                &:last-of-type {
+                    background-color: #8701CA;
+                    border-radius: 0 toRem(0) toRem(16) 0;
+                }
+           }
+        }
+    }
+}
