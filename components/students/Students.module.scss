@@ -1,3 +1,87 @@
 @import "@/styles/variables";
 @import "@/styles/breakpoint";
 @import "@/styles/font";
+
+
+.students {
+    padding-top: 950px;
+    text-align: center;
+    position: relative;
+
+    .students_title {
+        margin-bottom: 77px;
+
+        h3 {
+            @include Inter800();
+            color: #fff;
+        }
+    }
+
+    .students_content {
+        text-align: center;
+        max-width: 590px;
+        padding: 82px 24px 64px;
+        margin: auto;
+        border-radius: 40px;
+        background-color: #fff;
+
+        p {
+            padding-bottom: 15px;
+            line-height: 1.4;
+
+
+        }
+
+        span {
+
+            line-height: 1.8;
+        }
+
+        &::after {
+            content: "";
+            display: block;
+            width: 78px;
+            height: 78px;
+            border-radius: 50%;
+            background-color: #F9841A;
+            position: absolute;
+            top: 77%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #ffffff;
+            line-height: 21px;
+            text-align: center;
+        }
+
+
+    }
+
+    .students_bg {
+        position: absolute;
+        top: 76%;
+        margin: 0 15%;
+    }
+
+    .students_nhai {
+        position: absolute;
+        top: 64%;
+        left: 49%;
+    }
+
+    .student_girl {
+        position: absolute;
+        top: 89%;
+        left: 61%;
+    }
+    .student_1 {
+        position: absolute;
+        top: 89%;
+        left: 61%;
+    }
+    .student_2 {
+        position: absolute;
+        top: 89%;
+        left: 61%;
+    }
+
+}
