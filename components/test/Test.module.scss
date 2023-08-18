@@ -1,0 +1,213 @@
+@import "@/styles/variables";
+@import "@/styles/breakpoint";
+@import "@/styles/font";
+
+.test {
+    position: relative;
+    margin-top: 74%;
+
+    .test_title {
+        display: flex;
+        margin: 0 12%;
+        justify-content: flex-end;
+        align-items: center;
+
+        h3 {
+            @include Inter800();
+            font-size: 32px;
+        }
+
+        .test_button {
+            margin-left: 290px;
+            padding: 11px 54px 11px 20px;
+            border: 1px solid #8701CA;
+            border-radius: 100px;
+
+            a {
+                color: #8701CA;
+
+                &::after {
+                    content: ">";
+                    display: block;
+                    width: 24px;
+                    height: 24px;
+                    border-radius: 50%;
+                    background-color: #F9841A;
+                    position: absolute;
+                    top: 4%;
+                    left: 86%;
+                    transform: translate(-50%, -50%);
+                    color: #ffffff;
+                    line-height: 21px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .test_title_list {
+        display: flex;
+        padding: 30px 160px;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            gap: 15.1px;
+            align-items: center;
+
+            li {
+                white-space: nowrap;
+                padding: 5px 10px;
+
+                &:first-of-type {
+                    background-color: #F9841A;
+                    border-radius: 32px;
+                    padding: 10px 20px;
+                }
+            }
+        }
+
+    }
+
+    .test_title_search {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 12% 25px;
+
+
+        form {
+            display: flex;
+            min-width: 925px;
+            background-color: #F7F7F8;
+            margin: auto;
+            padding: 10px 6px 10px 10px;
+            border-radius: 44px;
+
+            input {
+                background-color: #F7F7F8;
+                border: none;
+
+
+
+                &:first-of-type {
+                    width: 200px;
+                    margin-right: 65px;
+
+                }
+
+                &:last-of-type {
+                    width: 400px;
+                }
+            }
+
+            .test_title_look {
+                position: absolute;
+                right: 22%;
+                top: 21%;
+            }
+
+            .test_title_icon_down {
+                position: absolute;
+                left: 29%;
+                top: 23%;
+            }
+        }
+    }
+
+    .test_content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin: 0 5%;
+        gap: 8px;
+        overflow: visible;
+
+        .test_content_block {
+            display: flex;
+            flex-direction: row;
+            background-color: #F3F3F3;
+            padding: 16px 24px;
+            column-gap: 20px;
+
+            .test_content_video {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+
+                img {
+                    border-radius: 10px;
+                }
+
+                h6 {
+                    font-size: 14px;
+                    margin-top: 8px;
+                    font-weight: bolder;
+
+                    span {
+                        font-size: 14px;
+                        white-space: nowrap;
+                        line-height: 19.6px;
+                        font-weight: bolder;
+                    }
+                }
+
+                p {
+                    white-space: nowrap;
+
+                }
+
+                img {
+                    width: 100%;
+                }
+
+            }
+
+
+
+            .test_content_comment {
+                display: flex;
+                flex-direction: column;
+
+                h6 {
+                    font-weight: bold;
+                    white-space: nowrap;
+                }
+
+                p {
+                    font-weight: bold;
+                    margin-top: 10px;
+                }
+
+                .test_content_comment_include {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+
+                    .test_content_comment_include_private {
+                        
+                        justify-content: space-between;
+
+                        .right {
+                            display: flex;
+                            align-items: center;
+                            margin-right: 5px;
+                            gap: 5px;
+                            img {
+                                margin-top: 5px;
+                            }
+                        }
+
+                        .left {
+                            display: flex;
+                            align-items: center;
+                            margin-right: 5px;
+                            gap: 5px;
+                            img {
+                                margin-top: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}

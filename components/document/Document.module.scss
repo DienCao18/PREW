@@ -130,6 +130,7 @@
             .document_content_video {
                 display: flex;
                 justify-content: space-between;
+
                 img {
                     width: 100%;
                 }
@@ -141,11 +142,14 @@
                 color: #8701CA;
 
             }
+
             .document_content_comment {
                 margin: 8px 14px 15px 10px;
+
                 span {
                     margin-left: 2px;
                 }
+
                 img {
                     &:nth-of-type(1) {
                         // transform: rotate(90deg);
@@ -155,5 +159,28 @@
             }
         }
 
+    }
+
+    .document_button {
+        text-align: center;
+        margin-top: 33px;
+
+        a {
+            padding: 17px 16px;
+            background-color: #F9841A;
+            border-radius: 8px;
+            color: #ffffff;
+            box-shadow: 10px 20px 20px 0 rgba(0, 0, 0, 0.1);
+
+            &::after {
+                content: ">";
+                height: 24px;
+                width: 24px;
+                color: #ffffff;
+                display: inline-block;
+                margin-left: 14px;
+                vertical-align: text-top;
+            }
+        }
     }
 }

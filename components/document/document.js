@@ -24,7 +24,7 @@ export default function document() {
                         <li>TOEIC</li>
                         <li>Tiếng Anh THPTQG</li>
                         <li>NEW SAT</li>
-
+                    
                     </ul>
                 </div>
 
@@ -162,7 +162,10 @@ export default function document() {
                     </div>
                 </div>
             </div>
-
+            <div className={styles.document_button}>
+                <a href='#'>Xem thêm bộ tài liệu tại đây</a>
+            
+            </div>
 
         </div>
     )
