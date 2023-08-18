@@ -92,7 +92,7 @@ h5 {
 
 p {
     @include Inter400();
-    font-size: toRem(18);
+    font-size: toRem(16);
     line-height: 1.4;
 
     @include respond-tabletlandscape {

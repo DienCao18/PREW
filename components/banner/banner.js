@@ -66,7 +66,7 @@ export default function banner() {
 
                 <div className={styles.banner_course}>
                     <div className={styles.banner_course_people}>
-                    
+                        <img src='/images/university.png'></img>
                     </div>
                     <div className={styles.banner_course_content}>
                         <div className={styles.banner_course_title}>
@@ -79,11 +79,16 @@ export default function banner() {
                             <Link href='#'>THPT</Link>
                         </div>
                         <div className={styles.banner_course_icon}>
-                            <div className={styles.banner_course_icon_start}>
+                            <div className={styles.banner_course_icon_group}>
+                                <div className={styles.banner_course_icon_star}>
+                                    <img src='/images/start.png'></img>
+                                    <span> 5.0</span>
+                                </div>
+                                <p>Đánh từ 6,000+ khách hàng</p>
 
                             </div>
                             <div className={styles.banner_course_icon_people}>
-
+                                <img src='/images/grouppeople.png'></img>
                             </div>
                         </div>
                     </div>

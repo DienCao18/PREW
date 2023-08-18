@@ -240,14 +240,18 @@
         align-items: flex-end;
         padding: 38px 92px 37px 8px;
         border-radius: 16px;
-
+        .banner_course_people {
+            position: absolute;
+            right: 46%;
+            top: -85%;
+        }
         .banner_course_content {
             .banner_course_title {
                 color: #ffffff;
                 text-align: start;
                 max-width: 406px;
                 margin-bottom: 16px;
-                
+
                 p {
                     font-size: 32px;
                     @include Inter600();
@@ -282,6 +286,54 @@
 
                 }
 
+            }
+
+            .banner_course_icon {
+                display: flex;
+                justify-content: space-between;
+                margin-top: toRem(16);
+                position: relative;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    left: 250px;
+                    top: 3px;
+                    height: 44px;
+                    width: 0px;
+                    border: 1px solid #ffffff;
+                    opacity: 0.4;
+
+
+                    
+                }
+
+                
+
+                .banner_course_icon_group {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    text-align: start;
+                    margin-right: toRem(38);
+
+                    .banner_course_icon_star {
+                        gap: 9px;
+                        display: flex;
+
+                        span {
+                            color: #ffffff;
+                        }
+                    }
+
+                    p {
+                        color: #E0E0E0;
+                        margin-top: 9px;
+                    }
+
+                }
+
+                .banner_course_icon_people {}
             }
         }
 

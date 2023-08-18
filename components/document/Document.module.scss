@@ -1,0 +1,29 @@
+@import "@/styles/variables";
+@import "@/styles/breakpoint";
+@import "@/styles/font";
+
+.document {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    margin-top: 262px;
+    .document_title {
+        .document_title_content {
+            position: relative;
+            display: flex;
+            h3 {
+                font-weight: 800;
+            }
+
+            .document_title_content_icon {
+                position: absolute;
+            }
+        }
+    }
+
+    .document_content {
+        .document_content_video {}
+    }
+}
