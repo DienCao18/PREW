@@ -106,7 +106,7 @@ p {
 }
 
 span {
-    @include Inter800();
+    @include Inter400();
 
     @include respond-mobile {
         font-size: toRem(14);
