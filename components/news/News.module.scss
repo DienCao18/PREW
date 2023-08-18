@@ -1,0 +1,104 @@
+@import "@/styles/variables";
+@import "@/styles/breakpoint";
+@import "@/styles/font";
+
+.news {
+    position: relative;
+
+    .news_bg {
+        position: absolute;
+
+        img {
+            width: 100%;
+        }
+
+    }
+
+    .news_title {
+        position: absolute;
+        top: 0;
+        top: 300px;
+        left: 15%;
+
+        h3 {
+            font-weight: 800;
+            color: #ffffff;
+        }
+    }
+
+    .news_content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 360px 15% 0;
+        position: absolute;
+        gap: 24px;
+
+        .news_content_block {
+            span {
+                color: #ffffff;
+            }
+
+            h6 {
+                margin-bottom: 15px;
+                // color: #FCA345;
+                font-size: 16px;
+                color: #ffffff;
+
+
+            }
+
+            p {
+                color: #ffffff;
+                margin-top: 15px;
+
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .news_content_block_include {
+            border-bottom: 1px solid #CECECE;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 23px;
+            padding-right: 100px;
+            position: relative;
+
+            img {
+                width: 16px;
+                height: 16px;
+                top: 36px;
+                right: 0;
+                position: absolute;
+
+            }
+        }
+    }
+
+    .document_button {
+        text-align: center;
+        margin-top: 33px;
+
+        a {
+            padding: 17px 16px;
+            background-color: #F9841A;
+            border-radius: 8px;
+            color: #ffffff;
+            box-shadow: 10px 20px 20px 0 rgba(0, 0, 0, 0.1);
+
+            &::after {
+                content: ">";
+                height: 24px;
+                width: 24px;
+                color: #ffffff;
+                display: inline-block;
+                margin-left: 14px;
+                vertical-align: text-top;
+            }
+        }
+    }
+
+
+}
