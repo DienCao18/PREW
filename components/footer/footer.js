@@ -46,12 +46,18 @@ export default function footer() {
             </div>
             <div className={styles.social}>
               <p>Theo dõi chúng tôi:</p>
-
               <img src='/images/social.png'></img>
-
             </div>
-
           </div>
+        </div>
+        <div className={styles.footer_phone}>
+          <img src='/images/footer_phone.png'></img>
+        </div>
+        <div className={styles.footer_messager}>
+          <img src='/images/messager.png'></img>
+        </div>
+        <div className={styles.footer_zalo}>
+          <img src='/images/zalo.png'></img>
         </div>
       </div>
       <div className={styles.footer_brand}>

@@ -8,7 +8,7 @@
     justify-content: space-between;
     padding: 136px 15% 64px;
     flex-direction: column;
-
+    position: relative;
     .footer_block {
         display: flex;
         gap: 88px;
@@ -117,6 +117,24 @@
 
                 }
             }
+        }
+
+        .footer_zalo {
+            top: 40%;
+            position: absolute;
+            right: 0%;
+        }
+
+        .footer_messager {
+            top: 28%;
+            position: absolute;
+            right: 0%;
+        }
+
+        .footer_phone {
+            top: 17%;
+            position: absolute;
+            right: 1%;
         }
     }
 
