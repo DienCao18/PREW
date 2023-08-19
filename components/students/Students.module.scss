@@ -14,6 +14,7 @@
         h3 {
             @include Inter800();
             color: #fff;
+            font-size: 32px;
         }
     }
 
@@ -58,13 +59,18 @@
 
     .students_bg {
         position: absolute;
-        top: 76%;
+        top: 72%;
         margin: 0 15%;
+    }
+
+    .students_bg_rignt {
+        position: absolute;
+        top: 20%;
     }
 
     .students_nhai {
         position: absolute;
-        top: 64%;
+        top: 76%;
         left: 49%;
     }
 
@@ -73,15 +79,156 @@
         top: 89%;
         left: 61%;
     }
+
     .student_1 {
         position: absolute;
-        top: 89%;
-        left: 61%;
+        top: 70.5%;
+        left: 75%;
     }
+
     .student_2 {
         position: absolute;
         top: 89%;
-        left: 61%;
+        left: 7%;
     }
 
+    .student_3 {
+        position: absolute;
+        top: 73%;
+        left: 21%;
+    }
+
+    .student_4 {
+        position: absolute;
+        top: 89.5%;
+        left: 17%;
+    }
+
+
+    .student_5 {
+        position: absolute;
+        top: 68%;
+        left: 7%;
+
+    }
+
+    .student_6 {
+        position: absolute;
+        top: 76%;
+        left: 2%;
+    }
+
+    .student_7 {
+        position: absolute;
+        top: 98%;
+        left: 24%;
+    }
+
+    .student_8 {
+        position: absolute;
+        top: 102%;
+        left: 3%;
+    }
+
+    .student_9 {
+        position: absolute;
+        top: 98%;
+        left: 85%;
+    }
+
+    .student_10 {
+        position: absolute;
+        top: 93%;
+        left: 75%;
+    }
+
+    .student_11 {
+        position: absolute;
+        top: 81%;
+        left: 83%;
+    }
+
+    .student_12 {
+        position: absolute;
+        top: 79%;
+        left: 70%;
+    }
+
+    .student_13 {
+        position: absolute;
+        top: 77%;
+        left: 93%;
+    }
+
+    .student_14 {
+        position: absolute;
+        top: 67%;
+        left: 86%;
+    }
+
+    .student_15 {
+        position: absolute;
+        top: 75%;
+        left: 11%;
+    }
+}
+
+.company {
+    margin: 288px 15% 75px;
+
+    .company_title {
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h3 {
+            font-size: 32px;
+            color: #313131;
+            @include Inter600()
+        }
+
+        .company_title_button {
+
+
+
+            .prev_button {
+                margin-right: 10px;
+                border-radius: 50%;
+                border: 1px solid #8701CA;
+                padding: 10px;
+            }
+
+            .next_button {
+                border-radius: 50%;
+                border: 1px solid #8701CA;
+                padding: 10px;
+
+            }
+        }
+    }
+
+    .company_logo {
+        .slider_container {
+            
+
+            .slider {
+                display: flex;
+                transition: transform 0.5s ease-in-out;
+                justify-content: space-between;
+
+                .slide {
+                     /* Each slide takes 1/3 of the container width */
+                    display: inline-flex; /* Display slides in a row */
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 24px;
+                    background-color: #ffffff;
+                    margin: 0 10px;
+                }
+            }
+        }
+
+
+    }
 }
