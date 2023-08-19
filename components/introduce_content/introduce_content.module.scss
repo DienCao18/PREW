@@ -8,7 +8,9 @@
     margin-top: 1120px;
     max-width: 487px;
     margin-left: 15%;
-
+    @include respond-desktop-small() {
+        margin-left: 5%;
+    }
     .content_title {
 
         h6 {
@@ -128,6 +130,10 @@
         position: absolute;
         top: -18%;
         left: 64%;
+        @include  respond-laptop-big() {
+            
+        }
+    
     }
 
     .number1000 {
@@ -135,6 +141,9 @@
         transform: rotate(15deg);
         top: -44%;
         left: 157%;
+        @include  respond-laptop-big() {
+            
+        }
 
         p {
             font-family: 'Oswald', sans-serif;
@@ -148,6 +157,9 @@
         transform: rotate(-15deg);
         top: 3%;
         left: 215%;
+        @include  respond-laptop-big() {
+            display: none;
+        }
 
         p {
             font-family: 'Oswald', sans-serif;
@@ -160,6 +172,9 @@
         position: absolute;
         top: 50%;
         left: 159%;
+        @include  respond-laptop-big() {
+            
+        }
 
         p {
             font-family: 'Oswald', sans-serif;
@@ -177,6 +192,9 @@
         transform: rotate(15deg);
         min-width: 275px;
         border-radius: 8px;
+        @include  respond-laptop-big() {
+            display: none;
+        }
 
         a {
             @include Inter600();
@@ -193,6 +211,9 @@
         transform: rotate(-15deg);
         min-width: 250px;
         border-radius: 8px;
+        @include  respond-laptop-big() {
+            
+        }
 
         a {
             @include Inter600();
@@ -209,6 +230,9 @@
         transform: rotate(15deg);
         min-width: 305px;
         border-radius: 8px;
+        @include  respond-laptop-big() {
+          
+        }
 
         a {
             @include Inter600();

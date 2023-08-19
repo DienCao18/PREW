@@ -5,6 +5,9 @@
 .test {
     position: relative;
     margin-top: 74%;
+    @include  respond-laptop-big() {
+        margin-top: -55%;
+    }
 
     .test_title {
         display: flex;

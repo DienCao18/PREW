@@ -23,8 +23,8 @@
             height: 100%;
             object-fit: cover;
             transition: transform 0.2s;
-
-        }
+            height: 100vh;
+        }   
     }
 
     .banner_popup {
@@ -72,6 +72,12 @@
                 top: 28%;
                 max-width: 346px;
                 border-radius: 20px;
+                @include respond-desktop-small() {
+                    left: -30%;
+                }
+                @include respond-laptop-big() {
+                    display: none;
+                }
 
                 .banner_left_icon {}
 
@@ -105,6 +111,12 @@
                 top: 28%;
                 max-width: 346px;
                 border-radius: 20px;
+                @include respond-desktop-small() {
+                    right: -30%;
+                }
+                @include respond-laptop-big() {
+                    display: none;
+                }
 
                 .banner_right_icon {}
 
@@ -199,7 +211,9 @@
         position: absolute;
         top: 735%;
         right: 44%;
-
+        @include respond-laptop-big() {
+            right: 43%;
+        }
         img {
             width: 100%;
         }
@@ -209,7 +223,7 @@
         position: absolute;
         top: 826%;
         right: 44.5%;
-
+        pointer-events: none;
         img {
             width: 180%;
         }

@@ -10,6 +10,11 @@
     -webkit-transform: translate(-50%, -50%);
     margin-top: 660px;
     background-color: #ffffff;
+    @include  respond-laptop-big() {
+        position: relative;
+        margin-top: 1020px;
+
+    }
 
     .document_title {
         text-align: center;
@@ -121,7 +126,11 @@
         margin: 0 24px;
         gap: 8px;
         overflow: visible;
+        @include  respond-laptop-big() {
+            grid-template-columns: repeat(3, 1fr);
 
+        }
+    
         .document_content_block {
             display: flex;
             flex-direction: column;
@@ -164,7 +173,10 @@
     .document_button {
         text-align: center;
         margin-top: 33px;
-
+        @include  respond-laptop-big() {
+            margin-top: 50px;
+        }
+    
         a {
             padding: 17px 16px;
             background-color: #F9841A;
