@@ -10,7 +10,8 @@
     -webkit-transform: translate(-50%, -50%);
     margin-top: 660px;
     background-color: #ffffff;
-    @include  respond-laptop-big() {
+
+    @include respond-laptop-big() {
         position: relative;
         margin-top: 1020px;
 
@@ -59,16 +60,20 @@
                 justify-content: space-between;
                 gap: 14.2px;
                 align-items: center;
-
+                @include respond-laptop() {
+                    flex-wrap: wrap;
+                }
                 li {
                     white-space: nowrap;
                     padding: 5px 20px;
+                    transition: padding ease 0.5s;
 
-                    &:first-of-type {
+                    &:hover {
                         background-color: #F9841A;
                         border-radius: 32px;
                         padding: 10px 20px;
                     }
+
                 }
             }
 
@@ -107,8 +112,8 @@
 
                 .document_title_look {
                     position: absolute;
-                    right: 13%;
-                    top: 21%;
+                    right: 14%;
+                    top: 19%;
                 }
 
                 .document_title_icon_down {
@@ -126,11 +131,12 @@
         margin: 0 24px;
         gap: 8px;
         overflow: visible;
-        @include  respond-laptop-big() {
+
+        @include respond-laptop-big() {
             grid-template-columns: repeat(3, 1fr);
 
         }
-    
+
         .document_content_block {
             display: flex;
             flex-direction: column;
@@ -139,9 +145,15 @@
             .document_content_video {
                 display: flex;
                 justify-content: space-between;
+                overflow: hidden;
 
                 img {
                     width: 100%;
+                    transition: transform 0.3s ease;
+
+                    &:hover {
+                        transform: scale(1.2);
+                    }
                 }
 
             }
@@ -173,16 +185,23 @@
     .document_button {
         text-align: center;
         margin-top: 33px;
-        @include  respond-laptop-big() {
+
+        @include respond-laptop-big() {
             margin-top: 50px;
         }
-    
+
         a {
             padding: 17px 16px;
             background-color: #F9841A;
             border-radius: 8px;
             color: #ffffff;
             box-shadow: 10px 20px 20px 0 rgba(0, 0, 0, 0.1);
+
+            &:hover {
+                opacity: 0.8;
+
+            }
+
 
             &::after {
                 content: ">";

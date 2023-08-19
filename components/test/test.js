@@ -11,16 +11,15 @@ export default function test() {
             </div>
             <div className={styles.test_title_list}>
                 <ul>
-                    <li>Tất cả</li>
-                    <li>IELTS Academic</li>
-                    <li>IELTS General</li>
-                    <li>TOEIC</li>
-                    <li>Tiếng Anh THPTQG</li>
-                    <li>NEW SAT</li>
-                    <li>Tiếng Anh THCS</li>
-                    <li>Đại học</li>
-                    <li>NEW SAT</li>
-
+                    <li><a href='#'>Tất cả</a></li>
+                    <li><a href='#'>IELTS Academic</a></li>
+                    <li><a href='#'>IELTS General</a></li>
+                    <li><a href='#'>TOEIC</a></li>
+                    <li><a href='#'>Tiếng Anh THPTQG</a></li>
+                    <li><a href='#'>NEW SAT</a></li>
+                    <li><a href='#'>Tiếng Anh THCS</a></li>
+                    <li><a href='#'>Đại học</a></li>
+                    <li><a href='#'>NEW SAT</a></li>
                 </ul>
             </div>
 

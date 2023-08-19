@@ -3,6 +3,18 @@
 @import "@/styles/font";
 
 
+@keyframes shake {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    25%, 75% {
+      transform: translateY(-10px);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+  }
+
 .content {
     position: relative;
     margin-top: 1120px;
@@ -107,11 +119,14 @@
         background-color: #F9841A;
         max-width: 434px;
         padding: 17px 18px 17px 16px;
-
+        &:hover {
+            opacity: 0.8;
+        }
         a {
             color: #ffffff;
             font-size: 16px;
 
+            
             &::after {
                 content: ">";
                 height: 24px;
@@ -130,6 +145,7 @@
         position: absolute;
         top: -18%;
         left: 64%;
+        pointer-events: none;
         @include  respond-laptop-big() {
             
         }
@@ -192,6 +208,9 @@
         transform: rotate(15deg);
         min-width: 275px;
         border-radius: 8px;
+        &:hover {
+            animation: shake 0.5s ease infinite;
+          }
         @include  respond-laptop-big() {
             display: none;
         }
@@ -211,6 +230,9 @@
         transform: rotate(-15deg);
         min-width: 250px;
         border-radius: 8px;
+        &:hover {
+            animation: shake 0.5s ease infinite;
+          }
         @include  respond-laptop-big() {
             
         }
@@ -230,6 +252,9 @@
         transform: rotate(15deg);
         min-width: 305px;
         border-radius: 8px;
+        &:hover {
+            animation: shake 0.5s ease infinite;
+          }
         @include  respond-laptop-big() {
           
         }

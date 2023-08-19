@@ -11,10 +11,10 @@ body {
     @include Inter400();
     font-size: 20px;
     color: $main-brown;
+
 }
 
 main {
-   
 }
 
 .page {
@@ -42,11 +42,11 @@ main {
 
 a {
     text-decoration: none;
-    
+
 }
 
 // h1 {
-   
+
 //     @include Inter800();
 //     font-size: toRem(48);
 //     // text-transform: uppercase;
@@ -138,9 +138,10 @@ span {
     height: 100vh;
 }
 
-details > summary {
+details>summary {
     list-style: none;
 }
-details > summary::-webkit-details-marker {
+
+details>summary::-webkit-details-marker {
     display: none;
 }

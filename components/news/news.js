@@ -1,7 +1,10 @@
-import React from 'react'
+"use client"
+import React, { useEffect } from 'react'
 import styles from './News.module.scss'
+import gsap from 'gsap';
 
 export default function news() {
+   
     return (
         <div className={styles.news}>
             <div className={styles.news_bg}>
@@ -55,16 +58,10 @@ export default function news() {
 
 
                 </div>
-                <div className={styles.document_button}>
-                    
-
-                </div>
-                <div className={styles.document_button}>
-                    <a href='#'>Xem thêm bộ tài liệu tại đây</a>
-
-                </div>
             </div>
-
+            <div className={styles.document_button}>
+                <a href='#'>Xem thêm bộ tài liệu tại đây</a>
+            </div>
         </div>
     )
 }

@@ -9,9 +9,19 @@
     padding: 136px 15% 64px;
     flex-direction: column;
     position: relative;
+
+    @include respond-laptop-big() {
+        padding: 100px 2% 64px;
+
+    }
+
     .footer_block {
         display: flex;
         gap: 88px;
+
+        @include respond-desktop-small() {
+            flex-wrap: wrap;
+        }
 
         .footer_block_detail {
             flex-direction: column;
@@ -100,6 +110,11 @@
                         &::placeholder {
                             color: #ABA4A4;
                         }
+
+                        &:focus {
+                            color: #ABA4A4;
+
+                        }
                     }
 
                     img {
@@ -135,6 +150,10 @@
             top: 17%;
             position: absolute;
             right: 1%;
+            // @include  respond-laptop-big() {
+            //    top:5%;
+            // }
+
         }
     }
 
@@ -143,6 +162,7 @@
         justify-content: center;
         padding-top: 20px;
         align-items: center;
+
         p {
             color: #fff;
         }

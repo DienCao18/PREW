@@ -39,9 +39,15 @@
                 display: flex;
                 font-size: toRem(16);
                 gap: toRem(24);
-
+                flex-wrap: wrap;
                 li {
                     justify-content: space-between;
+                    a {
+                        &:hover {
+                            color: #313131;
+                            border-bottom: 1px solid #F9841A;
+                        }
+                    }
                 }
             }
         }
@@ -58,7 +64,9 @@
                 padding: toRem(10) toRem(28);
                 color: #ffffff;
                 font-size: toRem(16);
-
+                &:hover {
+                    opacity: 0.8;
+                }
                 &:first-of-type {
                     background-image: linear-gradient(to right, #F95B34, #F9B840);
                     background-color: #F95B34;

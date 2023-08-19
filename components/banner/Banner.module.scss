@@ -2,7 +2,14 @@
 @import "@/styles/breakpoint";
 @import "@/styles/font";
 
-
+@keyframes swing {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-20px);
+    }
+  }
 
 
 
@@ -24,7 +31,7 @@
             object-fit: cover;
             transition: transform 0.2s;
             height: 100vh;
-        }   
+        }
     }
 
     .banner_popup {
@@ -72,9 +79,13 @@
                 top: 28%;
                 max-width: 346px;
                 border-radius: 20px;
+                &:hover {
+                    animation: swing 1s ease infinite alternate;
+                }
                 @include respond-desktop-small() {
                     left: -30%;
                 }
+
                 @include respond-laptop-big() {
                     display: none;
                 }
@@ -111,9 +122,14 @@
                 top: 28%;
                 max-width: 346px;
                 border-radius: 20px;
+                transition: transform 0.3s ease;
+                &:hover {
+                    animation: swing 1s ease infinite alternate;
+                }
                 @include respond-desktop-small() {
                     right: -30%;
                 }
+
                 @include respond-laptop-big() {
                     display: none;
                 }
@@ -181,6 +197,9 @@
                     input {
                         border: none;
                         min-width: 400px;
+                        &:focus {
+                            color: #222;
+                        }
                     }
 
                     img {
@@ -211,11 +230,20 @@
         position: absolute;
         top: 735%;
         right: 44%;
+        // transition: transform 0.3s ease;
+
         @include respond-laptop-big() {
             right: 43%;
         }
+
         img {
             width: 100%;
+
+            &:hover {
+                transform: translateY(-1000px);
+                opacity: 0;
+                transition: transform 0.5s ease, opacity 0.5s ease;
+            }
         }
     }
 
@@ -224,6 +252,7 @@
         top: 826%;
         right: 44.5%;
         pointer-events: none;
+
         img {
             width: 180%;
         }
@@ -233,9 +262,11 @@
         position: absolute;
         top: 840%;
         right: 44%;
+        pointer-events: none;
 
         img {
             width: 178%;
+            pointer-events: none;
         }
     }
 
@@ -254,12 +285,14 @@
         align-items: flex-end;
         padding: 38px 92px 37px 8px;
         border-radius: 16px;
+
         .banner_course_people {
             position: absolute;
             right: 46%;
             top: -85%;
             pointer-events: none;
         }
+
         .banner_course_content {
             .banner_course_title {
                 color: #ffffff;
@@ -282,7 +315,9 @@
                 a {
                     padding: 11px 36px;
                     border-radius: 8px;
-
+                    &:hover {
+                        opacity: 0.8;
+                    }
                     &:nth-child(1) {
                         background-color: #FCA345;
                     }
@@ -320,10 +355,10 @@
                     opacity: 0.4;
 
 
-                    
+
                 }
 
-                
+
 
                 .banner_course_icon_group {
                     display: flex;

@@ -1,13 +1,32 @@
+"use client"
 import React from 'react';
 import styles from './Students.module.scss'
-
+import { useEffect } from 'react';
 
 
 
 
 export default function Students() {
+  useEffect(() => {
+    const slidesContainer = document.querySelector(`.${styles.slides}`);
+    const prevButton = document.querySelector(`.${styles.prev_button}`);
+    const nextButton = document.querySelector(`.${styles.next_button}`);
   
- 
+    // Sử dụng các biến và bắt sự kiện ở đây
+    // Ví dụ:
+    
+    prevButton.addEventListener('click', () => {
+      currentSlideIndex = Math.max(currentSlideIndex - 1, 0);
+      showSlide(currentSlideIndex);
+    });
+  
+    nextButton.addEventListener('click', () => {
+      currentSlideIndex = Math.min(currentSlideIndex + 1, slidesContainer.children.length - 1);
+      showSlide(currentSlideIndex);
+    });
+  
+  
+  }, []); 
   return (
     <>
       <div className={styles.students}>
