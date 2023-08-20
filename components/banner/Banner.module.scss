@@ -255,6 +255,10 @@
 
         img {
             width: 180%;
+            @include  respond-laptop-big() {
+                height: 1500px;
+            }
+        
         }
     }
 

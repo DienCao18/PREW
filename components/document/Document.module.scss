@@ -19,7 +19,7 @@
 
     .document_title {
         text-align: center;
-        padding-top: 5.5%;
+        padding-top: 63px;
 
         .document_title_content {
             position: relative;
@@ -55,14 +55,21 @@
             display: flex;
             padding: 30px 160px;
 
+            @include respond-laptop() {
+                padding: 30px 5%;
+
+            }
+
             ul {
                 display: flex;
                 justify-content: space-between;
                 gap: 14.2px;
                 align-items: center;
+
                 @include respond-laptop() {
                     flex-wrap: wrap;
                 }
+
                 li {
                     white-space: nowrap;
                     padding: 5px 20px;
@@ -71,7 +78,7 @@
                     &:hover {
                         background-color: #F9841A;
                         border-radius: 32px;
-                        padding: 10px 20px;
+                        padding: 5px 20px;
                     }
 
                 }
@@ -137,23 +144,59 @@
 
         }
 
+        @include respond-tablet() {
+            grid-template-columns: repeat(2, 1fr);
+
+        }
+
         .document_content_block {
             display: flex;
             flex-direction: column;
             background-color: #F3F3F3;
+            cursor: pointer;
 
             .document_content_video {
                 display: flex;
                 justify-content: space-between;
                 overflow: hidden;
+                position: relative;
+
+                .documet_overlay {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: black;
+                    opacity: 0;
+                    // transition: opacity 0.3s ease-in-out;
+
+                    &:hover {
+                        opacity: 0.4;
+
+                        .document_content_video_active {
+                            display: flex;
+                            position: absolute;
+                            left: 50%;
+                            top: 50%;
+                            transform: translate(-50%, -50%);
+                            color: #ffffff;
+                            justify-content: center;
+                            align-items: baseline;
+
+                            p {
+                                white-space: nowrap;
+                                color: #ffffff;
+                            }
+
+                        }
+                    }
+                }
+
+
 
                 img {
                     width: 100%;
-                    transition: transform 0.3s ease;
-
-                    &:hover {
-                        transform: scale(1.2);
-                    }
                 }
 
             }

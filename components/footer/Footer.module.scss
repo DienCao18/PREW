@@ -46,9 +46,13 @@
                 line-height: 1.5;
 
                 li {
+                    
                     a {
                         color: #ffffff;
                         font-size: 14px;
+                        &:hover {
+                            color: #F9841A;
+                        }
                     }
 
                 }
@@ -68,6 +72,9 @@
                     margin: 0;
                     font-size: 14px;
                     line-height: 21px;
+                    &:hover {
+                        color: #F9841A;
+                    }
                 }
             }
 
@@ -112,7 +119,9 @@
                         }
 
                         &:focus {
-                            color: #ABA4A4;
+                            color: #F9841A 
+                               
+                            
 
                         }
                     }
@@ -122,6 +131,7 @@
                         top: 35%;
                         position: absolute;
                         z-index: 1;
+                        cursor: pointer;
                     }
                 }
 
@@ -129,6 +139,8 @@
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
+                    cursor: pointer;
+
 
                 }
             }
@@ -138,18 +150,24 @@
             top: 40%;
             position: absolute;
             right: 0%;
+            cursor: pointer;
+
         }
 
         .footer_messager {
             top: 28%;
             position: absolute;
             right: 0%;
+            cursor: pointer;
+
         }
 
         .footer_phone {
             top: 17%;
             position: absolute;
             right: 1%;
+            cursor: pointer;
+
             // @include  respond-laptop-big() {
             //    top:5%;
             // }

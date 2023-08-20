@@ -24,7 +24,7 @@ export default function document() {
                         <li>TOEIC</li>
                         <li>Tiếng Anh THPTQG</li>
                         <li>NEW SAT</li>
-                    
+
                     </ul>
                 </div>
 
@@ -53,6 +53,16 @@ export default function document() {
                 <div className={styles.document_content_block}>
                     <div className={styles.document_content_video}>
                         <img src='/images/video1.png'></img>
+                        <div className={styles.documet_overlay}>
+                            <div className={styles.document_content_video_active}>
+                                <img src='/images/video_eyes.png'></img>
+                                <p>Xem ngay</p>
+                                <img src='/images/dowloading.png'></img>
+                                <p>Tải xuống</p>
+
+                            </div>
+                        </div>
+
                     </div>
                     <p>Ngữ pháp Tiếng Anh ôn thi Toeic hiệu quả dành cho sinh viên</p>
                     <div className={styles.document_content_comment}>
@@ -67,6 +77,15 @@ export default function document() {
                 <div className={styles.document_content_block}>
                     <div className={styles.document_content_video}>
                         <img src='/images/video2.png'></img>
+                        <div className={styles.documet_overlay}>
+                            <div className={styles.document_content_video_active}>
+                                <img src='/images/video_eyes.png'></img>
+                                <p>Xem ngay</p>
+                                <img src='/images/dowloading.png'></img>
+                                <p>Tải xuống</p>
+
+                            </div>
+                        </div>
                     </div>
                     <p>Ngữ pháp Tiếng Anh ôn thi Toeic hiệu quả dành cho sinh viên</p>
                     <div className={styles.document_content_comment}>
@@ -81,6 +100,15 @@ export default function document() {
                 <div className={styles.document_content_block}>
                     <div className={styles.document_content_video}>
                         <img src='/images/video3.png'></img>
+                        <div className={styles.documet_overlay}>
+                            <div className={styles.document_content_video_active}>
+                                <img src='/images/video_eyes.png'></img>
+                                <p>Xem ngay</p>
+                                <img src='/images/dowloading.png'></img>
+                                <p>Tải xuống</p>
+
+                            </div>
+                        </div>
                     </div>
                     <p>Ngữ pháp Tiếng Anh ôn thi Toeic hiệu quả dành cho sinh viên</p>
                     <div className={styles.document_content_comment}>
@@ -95,6 +123,15 @@ export default function document() {
                 <div className={styles.document_content_block}>
                     <div className={styles.document_content_video}>
                         <img src='/images/video4.png'></img>
+                        <div className={styles.documet_overlay}>
+                            <div className={styles.document_content_video_active}>
+                                <img src='/images/video_eyes.png'></img>
+                                <p>Xem ngay</p>
+                                <img src='/images/dowloading.png'></img>
+                                <p>Tải xuống</p>
+
+                            </div>
+                        </div>
                     </div>
                     <p>Ngữ pháp Tiếng Anh ôn thi Toeic hiệu quả dành cho sinh viên</p>
                     <div className={styles.document_content_comment}>
@@ -109,6 +146,15 @@ export default function document() {
                 <div className={styles.document_content_block}>
                     <div className={styles.document_content_video}>
                         <img src='/images/video5.png'></img>
+                        <div className={styles.documet_overlay}>
+                            <div className={styles.document_content_video_active}>
+                                <img src='/images/video_eyes.png'></img>
+                                <p>Xem ngay</p>
+                                <img src='/images/dowloading.png'></img>
+                                <p>Tải xuống</p>
+
+                            </div>
+                        </div>
                     </div>
                     <p>Ngữ pháp Tiếng Anh ôn thi Toeic hiệu quả dành cho sinh viên</p>
                     <div className={styles.document_content_comment}>
@@ -123,10 +169,20 @@ export default function document() {
                 <div className={styles.document_content_block}>
                     <div className={styles.document_content_video}>
                         <img src='/images/video6.png'></img>
+                        <div className={styles.documet_overlay}>
+                            <div className={styles.document_content_video_active}>
+                                <img src='/images/video_eyes.png'></img>
+                                <p>Xem ngay</p>
+                                <img src='/images/dowloading.png'></img>
+                                <p>Tải xuống</p>
+
+                            </div>
+                        </div>
                     </div>
                     <p>Ngữ pháp Tiếng Anh ôn thi Toeic hiệu quả dành cho sinh viên</p>
                     <div className={styles.document_content_comment}>
                         <img src='/images/eyes.png'></img>
+                     
                         <span>999 lượt xem</span>
                         <img src='/images/star-bar.png'></img>
                         <span>(05)</span>
@@ -137,6 +193,15 @@ export default function document() {
                 <div className={styles.document_content_block}>
                     <div className={styles.document_content_video}>
                         <img src='/images/video7.png'></img>
+                        <div className={styles.documet_overlay}>
+                            <div className={styles.document_content_video_active}>
+                                <img src='/images/video_eyes.png'></img>
+                                <p>Xem ngay</p>
+                                <img src='/images/dowloading.png'></img>
+                                <p>Tải xuống</p>
+
+                            </div>
+                        </div>
                     </div>
                     <p>Ngữ pháp Tiếng Anh ôn thi Toeic hiệu quả dành cho sinh viên</p>
                     <div className={styles.document_content_comment}>
@@ -151,6 +216,15 @@ export default function document() {
                 <div className={styles.document_content_block}>
                     <div className={styles.document_content_video}>
                         <img src='/images/video8.png'></img>
+                        <div className={styles.documet_overlay}>
+                            <div className={styles.document_content_video_active}>
+                                <img src='/images/video_eyes.png'></img>
+                                <p>Xem ngay</p>
+                                <img src='/images/dowloading.png'></img>
+                                <p>Tải xuống</p>
+
+                            </div>
+                        </div>
                     </div>
                     <p>Ngữ pháp Tiếng Anh ôn thi Toeic hiệu quả dành cho sinh viên</p>
                     <div className={styles.document_content_comment}>
@@ -164,7 +238,7 @@ export default function document() {
             </div>
             <div className={styles.document_button}>
                 <a href='#'>Xem thêm bộ tài liệu tại đây</a>
-            
+
             </div>
 
         </div>
