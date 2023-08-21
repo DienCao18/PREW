@@ -142,7 +142,10 @@
         position: absolute;
         top: 89%;
         left: 7%;
-
+        @include respond-mobile() {
+            display: none;    
+        }
+        
         img {
             transition: transform 0.3s ease;
 
@@ -235,7 +238,9 @@
         position: absolute;
         top: 102%;
         left: 3%;
-
+        @include respond-mobile() {
+            display: none;    
+        }
         img {
             transition: transform 0.3s ease;
 

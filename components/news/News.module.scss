@@ -41,6 +41,7 @@
             padding: 168px 2% 45px;      
         }
         
+        
         .news_content_block {
             max-height: 420px;
             overflow: hidden;
@@ -48,6 +49,10 @@
                 background-image: linear-gradient(to bottom, rgba(123, 36, 185, 0.5),rgba(123, 36, 185, 0.1));    
             }
             
+
+            &:last-child {
+                overflow: auto;
+            }
             span {
                 color: #ffffff;
             }
