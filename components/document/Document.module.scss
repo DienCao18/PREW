@@ -121,6 +121,9 @@
                     position: absolute;
                     right: 14%;
                     top: 19%;
+                    @include  respond-laptop-big() {
+                        display: none;
+                    }
                 }
 
                 .document_title_icon_down {
@@ -231,6 +234,8 @@
 
         @include respond-laptop-big() {
             margin-top: 50px;
+            display: flex;
+            justify-content: center;
         }
 
         a {

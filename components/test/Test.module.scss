@@ -8,13 +8,27 @@
     margin-top: 1275px;
 
     @include respond-laptop-big() {
-        margin-top: -65%;
+        margin-top: -60%;
     }
+    @include respond-tabletlandscape() {
+        margin-top: -70%;             
+    }
+
     @include respond-tablet() {
         margin-top: -125%;
                    
     }
+    @include respond-laptop() {
+                  
+    }
+    @include respond-mobile() {
+        margin-top: -150%;        
+    }
     
+
+    
+   
+   
     .test_title {
         display: flex;
         margin: 0 12%;
@@ -62,7 +76,10 @@
     .test_title_list {
         display: flex;
         padding: 30px 160px;
-
+        @include  respond-laptop() {
+            padding: 30px 5%;
+        }
+        
         ul {
             display: flex;
             justify-content: space-between;
@@ -123,6 +140,10 @@
                 position: absolute;
                 right: 22%;
                 top: 18%;
+                @include  respond-laptop-big() {
+                    display: none;
+                }
+            
             }
 
             .test_title_icon_down {
@@ -146,7 +167,8 @@
         @include  respond-laptop-big() {
             flex-wrap: wrap;
             display: flex;
-            justify-content: center;
+            justify-content: space-around;
+            gap: 35px;   
 
         }
     
@@ -282,7 +304,8 @@
     }
 
     .test_button_register {
-        text-align: center;
+        display: flex;
+        justify-content: center;
         margin-top: 41px;
 
         a {

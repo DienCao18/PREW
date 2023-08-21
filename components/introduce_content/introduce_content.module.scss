@@ -4,25 +4,43 @@
 
 
 @keyframes shake {
-    0%, 100% {
-      transform: translateY(0);
+
+    0%,
+    100% {
+        transform: translateY(0);
     }
-    25%, 75% {
-      transform: translateY(-10px);
+
+    25%,
+    75% {
+        transform: translateY(-10px);
     }
+
     50% {
-      transform: translateY(10px);
+        transform: translateY(10px);
     }
-  }
+}
 
 .content {
     position: relative;
     margin-top: 1120px;
     max-width: 487px;
     margin-left: 15%;
+
     @include respond-desktop-small() {
         margin-left: 5%;
     }
+
+    @include respond-tabletlandscape() {
+        margin-left: 25%;
+        margin-top: 1000px;
+
+    }
+    @include respond-mobile() {
+        margin-left: 5%;
+
+    }
+    
+
     .content_title {
 
         h6 {
@@ -119,14 +137,16 @@
         background-color: #F9841A;
         max-width: 434px;
         padding: 17px 18px 17px 16px;
+
         &:hover {
             opacity: 0.8;
         }
+
         a {
             color: #ffffff;
             font-size: 16px;
 
-            
+
             &::after {
                 content: ">";
                 height: 24px;
@@ -146,10 +166,12 @@
         top: -18%;
         left: 64%;
         pointer-events: none;
-        @include  respond-laptop-big() {
-            
+
+        @include respond-laptop() {
+            display: none;
         }
-    
+
+
     }
 
     .number1000 {
@@ -157,8 +179,9 @@
         transform: rotate(15deg);
         top: -44%;
         left: 157%;
-        @include  respond-laptop-big() {
-            
+
+        @include respond-laptop() {
+            display: none;
         }
 
         p {
@@ -173,7 +196,8 @@
         transform: rotate(-15deg);
         top: 3%;
         left: 215%;
-        @include  respond-laptop-big() {
+
+        @include respond-laptop-big() {
             display: none;
         }
 
@@ -188,8 +212,9 @@
         position: absolute;
         top: 50%;
         left: 159%;
-        @include  respond-laptop-big() {
-            
+
+        @include respond-laptop() {
+            display: none;
         }
 
         p {
@@ -208,10 +233,12 @@
         transform: rotate(15deg);
         min-width: 275px;
         border-radius: 8px;
+
         &:hover {
             animation: shake 0.5s ease infinite;
-          }
-        @include  respond-laptop-big() {
+        }
+
+        @include respond-laptop-big() {
             display: none;
         }
 
@@ -230,11 +257,13 @@
         transform: rotate(-15deg);
         min-width: 250px;
         border-radius: 8px;
+
         &:hover {
             animation: shake 0.5s ease infinite;
-          }
-        @include  respond-laptop-big() {
-            
+        }
+
+        @include respond-laptop() {
+            display: none;
         }
 
         a {
@@ -252,11 +281,13 @@
         transform: rotate(15deg);
         min-width: 305px;
         border-radius: 8px;
+
         &:hover {
             animation: shake 0.5s ease infinite;
-          }
-        @include  respond-laptop-big() {
-          
+        }
+
+        @include respond-laptop() {
+            display: none;
         }
 
         a {

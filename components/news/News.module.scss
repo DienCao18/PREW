@@ -21,7 +21,10 @@
         top: 0;
         top: 300px;
         left: 15%;
-
+        @include respond-tablet() {
+            top: 100px;  
+            left: 28%;  
+        }
         h3 {
             font-weight: 800;
             color: #ffffff;
@@ -34,11 +37,17 @@
         padding: 360px 15% 0;
         position: absolute;
         gap: 24px;
-
+        @include respond-tablet() {
+            padding: 168px 2% 45px;      
+        }
+        
         .news_content_block {
             max-height: 420px;
             overflow: hidden;
-
+            @include respond-tablet() {
+                background-image: linear-gradient(to bottom, rgba(123, 36, 185, 0.5),rgba(123, 36, 185, 0.1));    
+            }
+            
             span {
                 color: #ffffff;
             }
@@ -101,7 +110,12 @@
         position: absolute;
         left: 50%;
         transform: translate(-50%, -50%);
-
+        display: flex;
+        justify-content: center;
+        @include respond-tablet() {
+            margin-top: 700px;
+        }
+        
         a {
             padding: 17px 16px;
             background-color: #F9841A;

@@ -4,12 +4,13 @@
 
 @keyframes swing {
     0% {
-      transform: translateY(0);
+        transform: translateY(0);
     }
+
     100% {
-      transform: translateY(-20px);
+        transform: translateY(-20px);
     }
-  }
+}
 
 
 
@@ -45,7 +46,10 @@
         text-align: center;
         width: 58%;
         // height: 100%;
-
+        @include respond-mobile() {
+            width: 98%;
+        }
+        
 
 
         .popup_icon {
@@ -79,9 +83,11 @@
                 top: 28%;
                 max-width: 346px;
                 border-radius: 20px;
+
                 &:hover {
                     animation: swing 1s ease infinite alternate;
                 }
+
                 @include respond-desktop-small() {
                     left: -30%;
                 }
@@ -123,9 +129,11 @@
                 max-width: 346px;
                 border-radius: 20px;
                 transition: transform 0.3s ease;
+
                 &:hover {
                     animation: swing 1s ease infinite alternate;
                 }
+
                 @include respond-desktop-small() {
                     right: -30%;
                 }
@@ -164,7 +172,11 @@
                 @include Inter800();
                 font-size: toRem(48);
                 margin: auto;
-
+                @include respond-mobile() {
+                   font-size: 30px;
+                   padding-top: 25px;
+                }
+                
                 span {
                     color: #ffffff;
                 }
@@ -175,10 +187,11 @@
                 padding-top: toRem(10);
                 max-width: 610px;
                 margin: auto;
+
                 @include respond-laptop() {
-                  font-size: 20px;  
+                    font-size: 20px;
                 }
-        
+
             }
 
             .popup_search {
@@ -200,6 +213,10 @@
                     input {
                         border: none;
                         min-width: 400px;
+                        @include respond-tablet() {
+                            min-width: 0;
+                        }
+                        
                         &:focus {
                             color: #222;
                         }
@@ -223,9 +240,11 @@
     .theorange {
         position: absolute;
         top: 820%;
+
         @include respond-laptop() {
             display: none;
         }
+
         img {
             width: 100%;
         }
@@ -235,10 +254,12 @@
         position: absolute;
         top: 735%;
         right: 44%;
+
         // transition: transform 0.3s ease;
         @include respond-laptop() {
             display: none;
         }
+
         @include respond-laptop-big() {
             right: 43%;
         }
@@ -262,10 +283,11 @@
 
         img {
             width: 180%;
-            @include  respond-laptop-big() {
+
+            @include respond-laptop-big() {
                 height: 1500px;
             }
-        
+
         }
     }
 
@@ -274,6 +296,7 @@
         top: 840%;
         right: 44%;
         pointer-events: none;
+
         @include respond-laptop() {
             display: none;
         }
@@ -290,9 +313,11 @@
         right: 76%;
         pointer-events: none;
         z-index: -1;
+
         @include respond-laptop-big() {
             display: none;
         }
+
         img {
             width: 100%;
             pointer-events: none;
@@ -314,29 +339,38 @@
         align-items: flex-end;
         padding: 38px 92px 37px 8px;
         border-radius: 16px;
+
         @include respond-laptop() {
             justify-content: center;
             padding: 38px 0px 37px 0px;
             flex-direction: row;
-           
+
         }
+
         .banner_course_people {
             position: absolute;
             right: 46%;
             top: -85%;
             pointer-events: none;
+
             @include respond-laptop() {
                 display: none;
             }
         }
 
         .banner_course_content {
+            flex-direction: column;
+            display: flex;
+
             .banner_course_title {
                 color: #ffffff;
                 text-align: start;
                 max-width: 406px;
                 margin-bottom: 16px;
-
+                @include respond-laptop() {
+                    max-width: 800px;
+                }
+               
                 p {
                     font-size: 32px;
                     @include Inter600();
@@ -348,13 +382,18 @@
 
                 gap: 4px;
                 display: flex;
-
+                @include respond-laptop() {
+                    justify-content: center;
+                }
+               
                 a {
                     padding: 11px 36px;
                     border-radius: 8px;
+
                     &:hover {
                         opacity: 0.8;
                     }
+
                     &:nth-child(1) {
                         background-color: #FCA345;
                     }

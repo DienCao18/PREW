@@ -148,7 +148,7 @@ export default function Students() {
                     slidesPerView:1,
                     spaceBetween: 40,
                   },
-                  768: {
+                  500: {
                     slidesPerView: 2,
                     spaceBetween: 40,
                   },

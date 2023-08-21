@@ -26,7 +26,10 @@
     padding-top: 950px;
     text-align: center;
     position: relative;
-
+    @include respond-tablet() {
+        padding-top: 800px;
+    }
+    
 
     .students_title {
         margin-bottom: 77px;
@@ -35,6 +38,9 @@
             @include Inter800();
             color: #fff;
             font-size: 32px;
+            @include respond-laptop() {
+                color: #453926;
+            }
         }
     }
 
@@ -76,6 +82,9 @@
             color: #ffffff;
             line-height: 21px;
             text-align: center;
+            @include  respond-laptop() {
+                display: none;
+            }
         }
 
 
@@ -86,6 +95,9 @@
         top: 72%;
         margin: 0 15%;
         pointer-events: none;
+        @include  respond-tablet() {
+            display: none;
+        }
     }
 
     .students_bg_rignt {
@@ -98,12 +110,18 @@
         position: absolute;
         top: 76%;
         left: 49%;
+        @include  respond-laptop() {
+            display: none;
+        }
     }
 
     .student_girl {
         position: absolute;
         top: 89%;
         left: 61%;
+        @include  respond-laptop() {
+            display: none;
+        }
     }
 
     .student_1 {
@@ -152,7 +170,9 @@
         position: absolute;
         top: 89.5%;
         left: 17%;
-
+        @include  respond-tablet() {
+            display: none;
+        }
         img {
             transition: transform 0.3s ease;
 
@@ -167,7 +187,10 @@
         position: absolute;
         top: 68%;
         left: 7%;
-
+        @include respond-mobile() {
+            display: none;              
+        }
+        
         img {
             transition: transform 0.3s ease;
 
@@ -182,7 +205,9 @@
         position: absolute;
         top: 76%;
         left: 2%;
-
+        @include  respond-tablet() {
+            display: none;
+        }
         img {
             transition: transform 0.3s ease;
 
@@ -224,7 +249,9 @@
         position: absolute;
         top: 98%;
         left: 85%;
-
+        @include  respond-tablet() {
+            display: none;
+        }
         img {
             transition: transform 0.3s ease;
 
@@ -256,7 +283,9 @@
         position: absolute;
         top: 81%;
         left: 83%;
-
+        @include  respond-tablet() {
+            display: none;
+        }
         img {
             transition: transform 0.3s ease;
 
@@ -270,7 +299,9 @@
         position: absolute;
         top: 79%;
         left: 70%;
-
+        @include  respond-laptop() {
+            display: none;
+        }
         img {
             transition: transform 0.3s ease;
 
@@ -298,7 +329,9 @@
         position: absolute;
         top: 67%;
         left: 86%;
-
+        @include  respond-tablet() {
+            display: none;
+        }
         img {
             transition: transform 0.3s ease;
 
@@ -312,7 +345,9 @@
         position: absolute;
         top: 75%;
         left: 11%;
-
+        @include  respond-laptop() {
+            display: none;
+        }
         img {
             transition: transform 0.3s ease;
 
@@ -325,7 +360,10 @@
 
 .company {
     margin: 288px 15% 75px;
+    @include respond-tablet() {
+        margin: 150px 15% 75px;
 
+    }
     .company_title {
         margin-bottom: 50px;
         display: flex;
