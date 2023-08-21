@@ -175,7 +175,10 @@
                 padding-top: toRem(10);
                 max-width: 610px;
                 margin: auto;
-
+                @include respond-laptop() {
+                  font-size: 20px;  
+                }
+        
             }
 
             .popup_search {
@@ -220,7 +223,9 @@
     .theorange {
         position: absolute;
         top: 820%;
-
+        @include respond-laptop() {
+            display: none;
+        }
         img {
             width: 100%;
         }
@@ -231,7 +236,9 @@
         top: 735%;
         right: 44%;
         // transition: transform 0.3s ease;
-
+        @include respond-laptop() {
+            display: none;
+        }
         @include respond-laptop-big() {
             right: 43%;
         }
@@ -267,9 +274,27 @@
         top: 840%;
         right: 44%;
         pointer-events: none;
+        @include respond-laptop() {
+            display: none;
+        }
 
         img {
             width: 178%;
+            pointer-events: none;
+        }
+    }
+
+    .hat {
+        position: absolute;
+        top: 250%;
+        right: 76%;
+        pointer-events: none;
+        z-index: -1;
+        @include respond-laptop-big() {
+            display: none;
+        }
+        img {
+            width: 100%;
             pointer-events: none;
         }
     }
@@ -289,12 +314,20 @@
         align-items: flex-end;
         padding: 38px 92px 37px 8px;
         border-radius: 16px;
-
+        @include respond-laptop() {
+            justify-content: center;
+            padding: 38px 0px 37px 0px;
+            flex-direction: row;
+           
+        }
         .banner_course_people {
             position: absolute;
             right: 46%;
             top: -85%;
             pointer-events: none;
+            @include respond-laptop() {
+                display: none;
+            }
         }
 
         .banner_course_content {

@@ -3,16 +3,30 @@
 @import "@/styles/font";
 
 @keyframes wiggle {
-    0%, 100% { transform: rotate(0deg); }
-    25% { transform: rotate(-10deg); }
-    50% { transform: rotate(10deg); }
-    75% { transform: rotate(-10deg); }
-  }
+
+    0%,
+    100% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(-10deg);
+    }
+
+    50% {
+        transform: rotate(10deg);
+    }
+
+    75% {
+        transform: rotate(-10deg);
+    }
+}
+
 .students {
     padding-top: 950px;
     text-align: center;
     position: relative;
-    pointer-events: none;
+
 
     .students_title {
         margin-bottom: 77px;
@@ -42,6 +56,10 @@
         span {
 
             line-height: 1.8;
+
+            strong {
+                font-weight: bold;
+            }
         }
 
         &::after {
@@ -92,8 +110,10 @@
         position: absolute;
         top: 70.5%;
         left: 75%;
+
         img {
             transition: transform 0.3s ease;
+
             &:hover {
                 animation: wiggle 0.4s ease-in-out infinite;
             }
@@ -104,8 +124,10 @@
         position: absolute;
         top: 89%;
         left: 7%;
+
         img {
             transition: transform 0.3s ease;
+
             &:hover {
                 animation: wiggle 0.4s ease-in-out infinite;
             }
@@ -116,8 +138,10 @@
         position: absolute;
         top: 73%;
         left: 21%;
+
         img {
             transition: transform 0.3s ease;
+
             &:hover {
                 animation: wiggle 0.4s ease-in-out infinite;
             }
@@ -128,8 +152,10 @@
         position: absolute;
         top: 89.5%;
         left: 17%;
+
         img {
             transition: transform 0.3s ease;
+
             &:hover {
                 animation: wiggle 0.4s ease-in-out infinite;
             }
@@ -141,8 +167,10 @@
         position: absolute;
         top: 68%;
         left: 7%;
+
         img {
             transition: transform 0.3s ease;
+
             &:hover {
                 animation: wiggle 0.4s ease-in-out infinite;
             }
@@ -154,8 +182,10 @@
         position: absolute;
         top: 76%;
         left: 2%;
+
         img {
             transition: transform 0.3s ease;
+
             &:hover {
                 animation: wiggle 0.4s ease-in-out infinite;
             }
@@ -166,8 +196,10 @@
         position: absolute;
         top: 98%;
         left: 24%;
+
         img {
             transition: transform 0.3s ease;
+
             &:hover {
                 animation: wiggle 0.4s ease-in-out infinite;
             }
@@ -178,8 +210,10 @@
         position: absolute;
         top: 102%;
         left: 3%;
+
         img {
             transition: transform 0.3s ease;
+
             &:hover {
                 animation: wiggle 0.4s ease-in-out infinite;
             }
@@ -190,8 +224,10 @@
         position: absolute;
         top: 98%;
         left: 85%;
+
         img {
             transition: transform 0.3s ease;
+
             &:hover {
                 animation: wiggle 0.4s ease-in-out infinite;
             }
@@ -202,8 +238,14 @@
         position: absolute;
         top: 93%;
         left: 75%;
+
+        @include respond-laptop() {
+            display: none;
+        }
+
         img {
             transition: transform 0.3s ease;
+
             &:hover {
                 animation: wiggle 0.4s ease-in-out infinite;
             }
@@ -214,8 +256,10 @@
         position: absolute;
         top: 81%;
         left: 83%;
+
         img {
             transition: transform 0.3s ease;
+
             &:hover {
                 animation: wiggle 0.4s ease-in-out infinite;
             }
@@ -226,8 +270,10 @@
         position: absolute;
         top: 79%;
         left: 70%;
+
         img {
             transition: transform 0.3s ease;
+
             &:hover {
                 animation: wiggle 0.4s ease-in-out infinite;
             }
@@ -238,8 +284,10 @@
         position: absolute;
         top: 77%;
         left: 93%;
+
         img {
             transition: transform 0.3s ease;
+
             &:hover {
                 animation: wiggle 0.4s ease-in-out infinite;
             }
@@ -250,8 +298,10 @@
         position: absolute;
         top: 67%;
         left: 86%;
+
         img {
             transition: transform 0.3s ease;
+
             &:hover {
                 animation: wiggle 0.4s ease-in-out infinite;
             }
@@ -262,8 +312,10 @@
         position: absolute;
         top: 75%;
         left: 11%;
+
         img {
             transition: transform 0.3s ease;
+
             &:hover {
                 animation: wiggle 0.4s ease-in-out infinite;
             }
@@ -280,6 +332,11 @@
         justify-content: space-between;
         align-items: center;
 
+        @include respond-laptop-big() {
+            display: block;
+            text-align: center;
+        }
+
         h3 {
             font-size: 32px;
             color: #313131;
@@ -289,6 +346,10 @@
         .company_title_button {
 
             background-color: #fff;
+
+            @include respond-laptop-big() {
+                display: none;
+            }
 
             .prev_button {
                 margin-right: 10px;
@@ -337,8 +398,8 @@
                     justify-content: center;
                     align-items: center;
                     font-size: 24px;
-                    background-color: #ffffff;
-                    margin: 0 10px;
+                    // background-color: #ffffff;
+                    // margin: 0 10px;
                 }
             }
         }

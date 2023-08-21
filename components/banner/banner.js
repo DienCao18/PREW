@@ -65,6 +65,9 @@ export default function banner() {
                 <div className={styles.stroke}>
                     <img src='/images/stroke.png'></img>
                 </div>
+                <div className={styles.hat}>
+                    <img src='/images/hat.png'></img>
+                </div>
 
                 <div className={styles.banner_course}>
                     <div className={styles.banner_course_people}>

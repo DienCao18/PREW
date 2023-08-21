@@ -10,7 +10,11 @@
     @include respond-laptop-big() {
         margin-top: -65%;
     }
-
+    @include respond-tablet() {
+        margin-top: -125%;
+                   
+    }
+    
     .test_title {
         display: flex;
         margin: 0 12%;
@@ -29,7 +33,10 @@
             border-radius: 100px;
             position: absolute;
             right: 5%;
-
+            @include respond-tablet() {
+                   display: none;
+            }
+            
             a {
                 color: #8701CA;
 

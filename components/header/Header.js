@@ -22,6 +22,9 @@ export default function header() {
             <li><Link href="#"> Tin tức tuyển sinh</Link></li>
           </ul>
         </div>
+        <div className={styles.header_dropdown}>
+          <div className={styles.header_dropdown_inner}></div>
+        </div>
         <div className={styles.header_login}>
           <a href='#'> Đăng nhập </a>
           <a href='#'> Đăng ký </a>
