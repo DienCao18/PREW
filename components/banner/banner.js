@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export default function banner() {
 
-    
+
     return (
         <>
 
@@ -42,6 +42,9 @@ export default function banner() {
                                 <span>Khóa học online đa dạng cho mọi đối tượng</span>
                             </div>
                         </div>
+                        <div className={styles.hat}>
+                            <img src='/images/hat.png'></img>
+                        </div>
                         <div className={styles.popup_search}>
                             <div className={styles.popup_search_cooper}>
                                 <input type='text' placeholder='Tìm kiếm tài liệu, khóa học Online,...' />
@@ -65,9 +68,7 @@ export default function banner() {
                 <div className={styles.stroke}>
                     <img src='/images/stroke.png'></img>
                 </div>
-                <div className={styles.hat}>
-                    <img src='/images/hat.png'></img>
-                </div>
+
 
                 <div className={styles.banner_course}>
                     <div className={styles.banner_course_people}>

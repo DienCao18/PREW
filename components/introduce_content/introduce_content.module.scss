@@ -137,6 +137,7 @@
         background-color: #F9841A;
         max-width: 434px;
         padding: 17px 18px 17px 16px;
+        border-radius: 8px;
         @include respond-mobile() {
             margin-right: 10px;          
         }
