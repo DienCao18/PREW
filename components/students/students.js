@@ -170,9 +170,7 @@ export default function Students() {
                 <SwiperSlide className={styles.slide}><img src='/images/logo3.png'></img></SwiperSlide>
                 <SwiperSlide className={styles.slide}><img src='/images/logo4.png'></img></SwiperSlide>
                 <SwiperSlide className={styles.slide}><img src='/images/logo5.png'></img></SwiperSlide>
-                <SwiperSlide className={styles.slide}><img src='/images/logo1.png'></img></SwiperSlide>
-                <SwiperSlide className={styles.slide}><img src='/images/logo2.png'></img></SwiperSlide>
-                <SwiperSlide className={styles.slide}><img src='/images/logo3.png'></img></SwiperSlide>
+              
               </Swiper>
             </div>
           </div>
