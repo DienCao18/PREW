@@ -30,6 +30,10 @@
         padding-top: 800px;
     }
     
+    @include respond-mobile() {
+        padding-top: 1290px;                 
+    }
+    
 
     .students_title {
         margin-bottom: 77px;
@@ -55,7 +59,10 @@
         p {
             padding-bottom: 15px;
             line-height: 1.4;
-
+            @include respond-mobile() {
+                font-size: 20px;
+            }
+            
 
         }
 
@@ -128,7 +135,9 @@
         position: absolute;
         top: 70.5%;
         left: 75%;
-
+        @include respond-mobile() {
+            display: none;              
+        }
         img {
             transition: transform 0.3s ease;
 
@@ -159,7 +168,9 @@
         position: absolute;
         top: 73%;
         left: 21%;
-
+        @include respond-mobile() {
+            display: none;              
+        }
         img {
             transition: transform 0.3s ease;
 
@@ -320,7 +331,9 @@
         position: absolute;
         top: 77%;
         left: 93%;
-
+        @include respond-mobile() {
+            display: none;              
+        }
         img {
             transition: transform 0.3s ease;
 
