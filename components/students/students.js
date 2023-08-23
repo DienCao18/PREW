@@ -35,11 +35,11 @@ export default function Students() {
     <>
       <div className={styles.students}>
         <div className={styles.students_bg}>
-          <img src='/images/world.png'></img>
+          <img src='/images/world.png' alt='world'></img>
 
         </div>
         <div className={styles.students_bg_rignt}>
-          <img src='/images/bg_right.png'></img>
+          <img src='/images/bg_right.png' alt='bg_right'></img>
 
         </div>
 
@@ -51,58 +51,58 @@ export default function Students() {
           <span><strong>Trâm Anh</strong> <br />Thành viên Toeic của Prew</span>
         </div>
         <div className={styles.students_nhai}>
-          <img src='/images/nhai.png'></img>
+          <img src='/images/nhai.png' alt='nhai'></img>
 
         </div>
         <div className={styles.student_girl}>
-          <img src='/images/student_girl.png'></img>
+          <img src='/images/student_girl.png' alt='student'></img>
         </div>
 
         <div className={styles.student_1}>
-          <img src='/images/student1.png'></img>
+          <img src='/images/student1.png' alt='student'></img>
         </div>
         <div className={styles.student_2}>
-          <img src='/images/student2.png'></img>
+          <img src='/images/student2.png' alt='student'></img>
         </div>
         <div className={styles.student_3}>
-          <img src='/images/student3.png'></img>
+          <img src='/images/student3.png' alt='student'></img>
         </div>
         <div className={styles.student_4}>
-          <img src='/images/student4.png'></img>
+          <img src='/images/student4.png' alt='student'></img>
         </div>
         <div className={styles.student_5}>
-          <img src='/images/student5.png'></img>
+          <img src='/images/student5.png' alt='student'></img>
         </div>
 
         <div className={styles.student_6}>
-          <img src='/images/student1.png'></img>
+          <img src='/images/student1.png' alt='student'></img>
         </div>
         <div className={styles.student_7}>
-          <img src='/images/student2.png'></img>
+          <img src='/images/student2.png' alt='student'></img>
         </div>
         <div className={styles.student_8}>
-          <img src='/images/student3.png'></img>
+          <img src='/images/student3.png' alt='student'></img>
         </div>
         <div className={styles.student_9}>
-          <img src='/images/student4.png'></img>
+          <img src='/images/student4.png' alt='student'></img>
         </div>
         <div className={styles.student_10}>
-          <img src='/images/student5.png'></img>
+          <img src='/images/student5.png' alt='student'></img>
         </div>
         <div className={styles.student_11}>
-          <img src='/images/student1.png'></img>
+          <img src='/images/student1.png' alt='student'></img>
         </div>
         <div className={styles.student_12}>
-          <img src='/images/student14.png'></img>
+          <img src='/images/student14.png' alt='student'></img>
         </div>
         <div className={styles.student_13}>
-          <img src='/images/student3.png'></img>
+          <img src='/images/student3.png' alt='student'></img>
         </div>
         <div className={styles.student_14}>
-          <img src='/images/student14.png'></img>
+          <img src='/images/student14.png' alt='student'></img>
         </div>
         <div className={styles.student_15}>
-          <img src='/images/student15.png'></img>
+          <img src='/images/student15.png' alt='student'></img>
         </div>
 
 
@@ -165,11 +165,11 @@ export default function Students() {
                 }}
                 modules={[Pagination, Keyboard]}
               >
-                <SwiperSlide className={styles.slide}><img src='/images/logo1.png'></img></SwiperSlide>
-                <SwiperSlide className={styles.slide}><img src='/images/logo2.png'></img></SwiperSlide>
-                <SwiperSlide className={styles.slide}><img src='/images/logo3.png'></img></SwiperSlide>
-                <SwiperSlide className={styles.slide}><img src='/images/logo4.png'></img></SwiperSlide>
-                <SwiperSlide className={styles.slide}><img src='/images/logo5.png'></img></SwiperSlide>
+                <SwiperSlide className={styles.slide}><img src='/images/logo1.png' alt='logo'></img></SwiperSlide>
+                <SwiperSlide className={styles.slide}><img src='/images/logo2.png' alt='logo'></img></SwiperSlide>
+                <SwiperSlide className={styles.slide}><img src='/images/logo3.png' alt='logo'></img></SwiperSlide>
+                <SwiperSlide className={styles.slide}><img src='/images/logo4.png' alt='logo'></img></SwiperSlide>
+                <SwiperSlide className={styles.slide}><img src='/images/logo5.png' alt='logo'></img></SwiperSlide>
               
               </Swiper>
             </div>

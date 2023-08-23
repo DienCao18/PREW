@@ -22,7 +22,7 @@ export default function introduce_content() {
         <a href='#' title='login' >Đăng ký tài khoản ngay để tham gia cùng PREW</a>
     </div>
     <div className={styles.girl}>
-        <img src='/images/girl.png'></img>
+        <img src='/images/girl.png' alt='girl'></img>
     </div>
     <div className={styles.number1000}>
         <p>1000</p>
