@@ -121,21 +121,7 @@ export default function Students() {
         <div className={styles.company_logo}>
           <div className={styles.slider_container}>
             
-              {/*<div className={styles.slide}>
-                <img src='/images/logo1.png'></img>
-              </div>
-              <div className={styles.slide}>
-                <img src='/images/logo2.png'></img>
-              </div>
-              <div className={styles.slide}>
-                <img src='/images/logo3.png'></img>
-              </div>
-              <div className={styles.slide}>
-                <img src='/images/logo4.png'></img>
-              </div>
-              <div className={styles.slide}>
-                <img src='/images/logo5.png'></img>
-              </div> */}
+           
               <Swiper
                 slidesPerView={5}
                 spaceBetween={0}
