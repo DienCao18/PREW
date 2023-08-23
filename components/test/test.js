@@ -11,15 +11,15 @@ export default function test() {
             </div>
             <div className={styles.test_title_list}>
                 <ul>
-                    <li><a href='#'>Tất cả</a></li>
-                    <li><a href='#'>IELTS Academic</a></li>
-                    <li><a href='#'>IELTS General</a></li>
-                    <li><a href='#'>TOEIC</a></li>
-                    <li><a href='#'>Tiếng Anh THPTQG</a></li>
-                    <li><a href='#'>NEW SAT</a></li>
-                    <li><a href='#'>Tiếng Anh THCS</a></li>
-                    <li><a href='#'>Đại học</a></li>
-                    <li><a href='#'>NEW SAT</a></li>
+                    <li><a href='#' title='all'>Tất cả</a></li>
+                    <li><a href='#' title='IELTS Academic'>IELTS Academic</a></li>
+                    <li><a href='#' title='IELTS General'>IELTS General</a></li>
+                    <li><a href='#' title='TOEIC'>TOEIC</a></li>
+                    <li><a href='#' title='Tiếng Anh THPTQG'>Tiếng Anh THPTQG</a></li>
+                    <li><a href='#' title='NEW SAT'>NEW SAT</a></li>
+                    <li><a href='#' title='Tiếng Anh THCS'>Tiếng Anh THCS</a></li>
+                    <li><a href='#' title='Đại học'>Đại học</a></li>
+                    <li><a href='#' title='NEW SAT'>NEW SAT</a></li>
                 </ul>
             </div>
 
@@ -64,7 +64,7 @@ export default function test() {
                                     <p> 4 phần thi </p>
                                 </div>
                                 <div className={styles.right}>
-                                    <a href='#'> #Listening </a>
+                                    <a href='#' title='listening'> #Listening </a>
                                 </div>
                             </div>
                             <div className={styles.test_content_comment_include_private}>
@@ -77,7 +77,7 @@ export default function test() {
                                     <p> 40 câu hỏi </p>
                                 </div>
                                 <div className={styles.left}>
-                                    <a href='#'> #IELTS Academic</a>
+                                    <a href='#' title='#IELTS Academic'> #IELTS Academic</a>
                                 </div>
                             </div>
                         </div>
@@ -103,7 +103,7 @@ export default function test() {
                                     <p> 4 phần thi </p>
                                 </div>
                                 <div className={styles.right}>
-                                    <a href='#'> #Listening </a>
+                                    <a href='#' title='listening'> #Listening </a>
                                 </div>
                             </div>
                             <div className={styles.test_content_comment_include_private}>
@@ -116,7 +116,7 @@ export default function test() {
                                     <p> 40 câu hỏi </p>
                                 </div>
                                 <div className={styles.left}>
-                                    <a href='#'> #IELTS Academic</a>
+                                    <a href='#' title='#IELTS Academic'> #IELTS Academic</a>
                                 </div>
                             </div>
                         </div>
@@ -142,7 +142,7 @@ export default function test() {
                                     <p> 4 phần thi </p>
                                 </div>
                                 <div className={styles.right}>
-                                    <a href='#'> #Listening </a>
+                                    <a href='#' title='#Listening'> #Listening </a>
                                 </div>
                             </div>
                             <div className={styles.test_content_comment_include_private}>
@@ -155,7 +155,7 @@ export default function test() {
                                     <p> 40 câu hỏi </p>
                                 </div>
                                 <div className={styles.left}>
-                                    <a href='#'> #IELTS Academic</a>
+                                    <a href='#' title='#IELTS Academic'> #IELTS Academic</a>
                                 </div>
                             </div>
                         </div>
@@ -181,7 +181,7 @@ export default function test() {
                                     <p> 4 phần thi </p>
                                 </div>
                                 <div className={styles.right}>
-                                    <a href='#'> #Listening </a>
+                                    <a href='#' title='listening'> #Listening </a>
                                 </div>
                             </div>
                             <div className={styles.test_content_comment_include_private}>
@@ -194,7 +194,7 @@ export default function test() {
                                     <p> 40 câu hỏi </p>
                                 </div>
                                 <div className={styles.left}>
-                                    <a href='#'> #IELTS Academic</a>
+                                    <a href='#' title='#IELTS Academic'> #IELTS Academic</a>
                                 </div>
                             </div>
                         </div>
@@ -221,7 +221,8 @@ export default function test() {
                                     <p> 4 phần thi </p>
                                 </div>
                                 <div className={styles.right}>
-                                    <a href='#'> #Listening </a>
+                                    <a href='#' title='listening'> #Listening </a>
+
                                 </div>
                             </div>
                             <div className={styles.test_content_comment_include_private}>
@@ -234,7 +235,7 @@ export default function test() {
                                     <p> 40 câu hỏi </p>
                                 </div>
                                 <div className={styles.left}>
-                                    <a href='#'> #IELTS Academic</a>
+                                    <a href='#' title='#IELTS Academic'> #IELTS Academic</a>
                                 </div>
                             </div>
                         </div>
@@ -260,7 +261,8 @@ export default function test() {
                                     <p> 4 phần thi </p>
                                 </div>
                                 <div className={styles.right}>
-                                    <a href='#'> #Listening </a>
+                                    <a href='#' title='listening'> #Listening </a>
+
                                 </div>
                             </div>
                             <div className={styles.test_content_comment_include_private}>
@@ -273,7 +275,7 @@ export default function test() {
                                     <p> 40 câu hỏi </p>
                                 </div>
                                 <div className={styles.left}>
-                                    <a href='#'> #IELTS Academic</a>
+                                    <a href='#' title='#IELTS Academic'> #IELTS Academic</a>
                                 </div>
                             </div>
                         </div>
@@ -299,7 +301,8 @@ export default function test() {
                                     <p> 4 phần thi </p>
                                 </div>
                                 <div className={styles.right}>
-                                    <a href='#'> #Listening </a>
+                                    <a href='#' title='listening'> #Listening </a>
+
                                 </div>
                             </div>
                             <div className={styles.test_content_comment_include_private}>
@@ -312,7 +315,7 @@ export default function test() {
                                     <p> 40 câu hỏi </p>
                                 </div>
                                 <div className={styles.left}>
-                                    <a href='#'> #IELTS Academic</a>
+                                    <a href='#' title='#IELTS Academic'> #IELTS Academic</a>
                                 </div>
                             </div>
                         </div>
@@ -338,7 +341,8 @@ export default function test() {
                                     <p> 4 phần thi </p>
                                 </div>
                                 <div className={styles.right}>
-                                    <a href='#'> #Listening </a>
+                                    <a href='#' title='listening'> #Listening </a>
+
                                 </div>
                             </div>
                             <div className={styles.test_content_comment_include_private}>
@@ -351,7 +355,7 @@ export default function test() {
                                     <p> 40 câu hỏi </p>
                                 </div>
                                 <div className={styles.left}>
-                                    <a href='#'> #IELTS Academic</a>
+                                    <a href='#' title='#IELTS Academic'> #IELTS Academic</a>
                                 </div>
                             </div>
                         </div>
@@ -360,8 +364,8 @@ export default function test() {
 
             </div>
             <div className={styles.test_button_register}>
-                <a href='#'>Xem thêm bộ tài liệu tại đây</a>
-            
+                <a href='#' title='document'>Xem thêm bộ tài liệu tại đây</a>
+
             </div>
         </div>
     )

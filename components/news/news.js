@@ -60,7 +60,7 @@ export default function news() {
                 </div>
             </div>
             <div className={styles.document_button}>
-                <a href='#'>Xem thêm bộ tài liệu tại đây</a>
+                <a href='#' title='document'>Xem thêm bộ tài liệu tại đây</a>
             </div>
         </div>
     )

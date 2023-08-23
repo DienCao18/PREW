@@ -54,6 +54,7 @@
                         &:hover {
                             color: #313131;
                             border-bottom: 1px solid #F9841A;
+                            cursor: alias;
                         }
                     }
                 }
@@ -128,7 +129,7 @@
                             text-decoration: none;
                             display: block;
                             text-align: left;
-    
+                            cursor: alias;
                             &:hover {
                                 background-color: #8701CA;
                                 color: #F9B840;

@@ -19,7 +19,7 @@ export default function introduce_content() {
         <p>Khóa học online dễ hiểu, phương pháp giảng dạy độc đáo </p>
     </div>
     <div className={styles.content_submit}>
-        <a href='#'>Đăng ký tài khoản ngay để tham gia cùng PREW</a>
+        <a href='#' title='login' >Đăng ký tài khoản ngay để tham gia cùng PREW</a>
     </div>
     <div className={styles.girl}>
         <img src='/images/girl.png'></img>
@@ -34,13 +34,13 @@ export default function introduce_content() {
         <p>10K</p>
     </div>
     <div className={styles.content_popup1000}>
-        <a href='#'>Bài giảng các kỹ năng</a>
+        <a href='#' title='lecture'>Bài giảng các kỹ năng</a>
     </div>
     <div className={styles.content_popup5000}>
-        <a href='#'>Tài liệu, đề thi thử online</a>
+        <a href='#' title='document'>Tài liệu, đề thi thử online</a>
     </div>
     <div className={styles.content_popup10K}>
-        <a href='#'>Học sinh, sinh viên hài lòng</a>
+        <a href='#' title='student'>Học sinh, sinh viên hài lòng</a>
     </div>
         </div>
     )

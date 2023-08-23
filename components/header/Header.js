@@ -15,11 +15,11 @@ export default function header() {
         </div>
         <div className={styles.header_submenu}>
           <ul>
-            <li><Link href="#"> Trang chủ</Link></li>
-            <li><Link href="#"> Giới thiệu</Link></li>
-            <li><Link href="#"> Thi thử online</Link></li>
-            <li><Link href="#"> Tài liệu học tập</Link></li>
-            <li><Link href="#"> Tin tức tuyển sinh</Link></li>
+            <li><Link href="#" title='trang chủ'> Trang chủ</Link></li>
+            <li><Link href="#" title='giới thiệu'> Giới thiệu</Link></li>
+            <li><Link href="#" title='thi thử online'> Thi thử online</Link></li>
+            <li><Link href="#" title='tài liệu học tập'> Tài liệu học tập</Link></li>
+            <li><Link href="#" title='tin tức tuyển sinh'> Tin tức tuyển sinh</Link></li>
           </ul>
         </div>
         <div className={styles.header_dropdown}>
@@ -27,13 +27,13 @@ export default function header() {
             
           </div>
           <div className={styles.header_dropdown_inner_hover}>
-              <a href='#'> Đăng nhập </a>
-              <a href='#'> Đăng ký </a>
-              <a href="#">Trang chủ </a>
-              <a href="#">Giới thiệu </a>
-              <a href="#">Thi thử online </a>
-              <a href="#">Tài liệu học tập </a>
-              <a href="#">Tin tức tuyển sinh </a>
+              <a href='#' title='đăng nhập'> Đăng nhập </a>
+              <a href='#' title='đăng ký'> Đăng ký </a>
+              <a href="#" title='trang chủ'>Trang chủ </a>
+              <a href="#" title='giới thiệu'>Giới thiệu </a>
+              <a href="#" title='thi thử online'>Thi thử online </a>
+              <a href="#" title='tài liệu học tập'>Tài liệu học tập </a>
+              <a href="#" title='tin tức tuyển sinh'>Tin tức tuyển sinh </a>
 
             </div>
         </div>

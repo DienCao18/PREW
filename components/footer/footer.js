@@ -13,12 +13,12 @@ export default function footer() {
         <div className={styles.footer_block_detail}>
           <h6>Về PREW</h6>
           <ul>
-            <li><a href='#'>Giới thiệu</a></li>
-            <li><a href='#'>Tài liệu</a></li>
-            <li><a href='#'>Thi thử online</a></li>
-            <li><a href='#'>Khóa học online</a></li>
-            <li><a href='#'>Tin tức tuyển sinh</a></li>
-            <li><a href='#'>Liên hệ</a></li>
+            <li><a href='#' title='giới thiệu'>Giới thiệu</a></li>
+            <li><a href='#' title='tài liệu'>Tài liệu</a></li>
+            <li><a href='#' title='thi thử online'>Thi thử online</a></li>
+            <li><a href='#' title='khóa học online'>Khóa học online</a></li>
+            <li><a href='#' title='tin tức tuyển sinh'>Tin tức tuyển sinh</a></li>
+            <li><a href='#' title='liên hệ'>Liên hệ</a></li>
           </ul>
         </div>
         <div className={styles.footer_block_detail}>
