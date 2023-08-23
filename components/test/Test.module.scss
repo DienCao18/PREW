@@ -10,25 +10,26 @@
     @include respond-laptop-big() {
         margin-top: -60%;
     }
+
     @include respond-tabletlandscape() {
-        margin-top: -70%;             
+        margin-top: -70%;
     }
 
     @include respond-tablet() {
         margin-top: -125%;
-                   
-    }
-    @include respond-laptop() {
-                  
-    }
-    @include respond-mobile() {
-        margin-top: -150%;        
-    }
-    
 
-    
-   
-   
+    }
+
+    @include respond-laptop() {}
+
+    @include respond-mobile() {
+        margin-top: -150%;
+    }
+
+
+
+
+
     .test_title {
         display: flex;
         margin: 0 12%;
@@ -47,10 +48,11 @@
             border-radius: 100px;
             position: absolute;
             right: 5%;
+
             @include respond-tablet() {
-                   display: none;
+                display: none;
             }
-            
+
             a {
                 color: #8701CA;
 
@@ -76,10 +78,11 @@
     .test_title_list {
         display: flex;
         padding: 30px 160px;
-        @include  respond-laptop() {
+
+        @include respond-laptop() {
             padding: 30px 5%;
         }
-        
+
         ul {
             display: flex;
             justify-content: space-between;
@@ -140,10 +143,11 @@
                 position: absolute;
                 right: 22%;
                 top: 18%;
-                @include  respond-laptop-big() {
+
+                @include respond-laptop-big() {
                     display: none;
                 }
-            
+
             }
 
             .test_title_icon_down {
@@ -162,16 +166,17 @@
 
         @include respond-desktop-small() {
             grid-template-columns: repeat(3, 1fr);
-           
+
         }
-        @include  respond-laptop-big() {
+
+        @include respond-laptop-big() {
             flex-wrap: wrap;
             display: flex;
             justify-content: space-around;
-            gap: 35px;   
+            gap: 35px;
 
         }
-    
+
 
         @include respond-tablet() {
             grid-template-columns: repeat(2, 1fr);
@@ -195,6 +200,7 @@
                 img {
                     border-radius: 10px;
                     transition: transform 0.3s ease;
+
                     &:hover {
                         transform: scale(1.2);
                     }
@@ -314,6 +320,7 @@
             border-radius: 8px;
             color: #ffffff;
             box-shadow: 10px 20px 20px 0 rgba(0, 0, 0, 0.1);
+            cursor: pointer;
 
             &::after {
                 content: ">";
